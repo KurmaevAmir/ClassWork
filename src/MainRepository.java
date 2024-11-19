@@ -27,6 +27,12 @@ public class MainRepository {
 
         userRepository.addingMultipleUsers(input_users);
 
+        System.out.print("Введите возраст: ");
+        Integer age = scanner.nextInt();
+        scanner.nextLine();
+        List<User> userWithAge = userRepository.findAllByAge(age);
+        outputUsersInformation(userWithAge);
+
         System.out.print("Введите стаж вождения: ");
         int experience = scanner.nextInt();
         scanner.nextLine();

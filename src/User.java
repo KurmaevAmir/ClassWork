@@ -1,11 +1,11 @@
 public class User {
     private Long id;
-    private String firstName;
-    private String lastName;
-    private String patronymic;
-    private Integer age;
-    private String email;
-    private Integer driving_experience;
+    private final String firstName;
+    private final String lastName;
+    private final String patronymic;
+    private final Integer age;
+    private final String email;
+    private final Integer driving_experience;
 
 
     public User(Long id, String firstName, String lastName, String patronymic, String email, Integer age, Integer driving_experience) {
